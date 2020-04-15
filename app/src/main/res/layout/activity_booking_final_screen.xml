@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/time_picker_background"
+    android:layout_height="match_parent"
+    tools:context=".bookingFinalScreen">
+    <ProgressBar
+        android:id="@+id/loading1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:elevation="3dp"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/progress_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="369dp"
+        android:layout_height="592dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:text="please select the approximate time of your visit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/getTime" />
+
+            <Button
+                android:id="@+id/setdate"
+                android:layout_width="123dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="128dp"
+                android:background="@drawable/booking_button_background"
+                android:text="Set date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="57dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="172dp"
+                android:text="Date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="65dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="152dp"
+                android:layout_marginTop="88dp"
+                android:text="Time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/settime"
+                android:layout_width="123dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="520dp"
+                android:background="@drawable/booking_button_background"
+                android:text="set time"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="326dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="168dp"
+                android:background="@drawable/booking_button_background"
+                android:text="book"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Spinner
+                android:id="@+id/getTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="336dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.527"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
